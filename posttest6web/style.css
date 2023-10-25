@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF; 
+    margin: 0;
+}
+
+.navtop {
+    background-color: #FFA500; /* Orange */
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-weight: normal;
+}
+
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+
+.navtop div a:hover {
+    color: #000000;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #FFA500; /* Orange */
+    color: #FFA500; /* Orange */
+}
+
+.read .create-contact {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFA500; /* Orange */
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+.read .create-contact:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.read .pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read .pagination a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    font-weight: bold;
+    color: #FFA500; /* Orange */
+    padding: 5px 10px;
+    margin: 15px 0 15px 5px;
+}
+
+.read .pagination a:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.read table {
+    width: 100%;
+    padding-top: 30px;
+    border-collapse: collapse;
+}
+
+.read table thead {
+    background-color: #000000;
+    border-bottom: 1px solid #FFA500; /* Orange */
+}
+
+.read table thead td {
+    padding: 10px;
+    font-weight: bold;
+    color: #FFA500; /* Orange */
+    font-size: 14px;
+}
+
+.read table tbody tr {
+    border-bottom: 1px solid #FFA500; /* Orange */
+}
+
+.read table tbody tr:nth-child(even) {
+    background-color: #000000;
+}
+
+.read table tbody tr:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.read table tbody tr:hover td {
+    color: #000000;
+}
+
+.read table tbody tr:hover td:nth-child(1) {
+    color: #000000;
+}
+
+.read table tbody tr td {
+    padding: 10px;
+}
+
+.read table tbody tr td:nth-child(1) {
+    color: #FFA500; /* Orange */
+}
+
+.read table tbody tr td.actions {
+    padding: 8px;
+    text-align: right;
+}
+
+.read table tbody tr td.actions .edit,
+.read table tbody tr td.actions .trash {
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+    color: #FFA500; /* Orange */
+    padding: 10px 12px;
+}
+
+.read table tbody tr td.actions .trash {
+    background-color: #000000;
+}
+
+.read table tbody tr td.actions .trash:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.read table tbody tr td.actions .edit {
+    background-color: #000000;
+}
+
+.read table tbody tr td.actions .edit:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.update form {
+    padding: 15px 0;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.update form label {
+    display: inline-flex;
+    width: 400px;
+    padding: 10px 0;
+    margin-right: 25px;
+}
+
+.update form input {
+    padding: 10px;
+    width: 400px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+}
+
+.update form input[type="submit"] {
+    display: block;
+    background-color: #000000;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFA500; /* Orange */
+    cursor: pointer;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.update form input[type="submit"]:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+.delete .yesno {
+    display: flex;
+}
+
+.delete .yesno a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    font-weight: bold;
+    color: #FFA500; /* Orange */
+    padding: 10px 15px;
+    margin: 15px 10px 15px 0;
+}
+
+.delete .yesno a:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+/* Kode CSS untuk tampilan tabel yang lebih menarik */
+
+/* Tabel */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Header Tabel */
+.content table th {
+    background-color: #FFA500; /* Warna Latar Orange */
+    color: #000; /* Warna Teks Hitam */
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Sel Genap */
+.content table tr:nth-child(even) {
+    background-color: #333; /* Warna Latar Abu-Abu Tua */
+    color: #FFF; /* Warna Teks Putih */
+}
+
+/* Sel Hover */
+.content table tbody tr:hover {
+    background-color: #FFA500; /* Warna Latar Orange saat Hover */
+    color: #000; /* Warna Teks Hitam saat Hover */
+    font-weight: bold;
+}
+
+/* Tombol Edit dan Hapus */
+.content table .edit, .content table .trash {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #FFA500;
+    margin: 0 5px;
+    color: #FFA500; /* Warna Teks Orange */
+    background-color: #000; /* Warna Latar Hitam */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efek Hover pada Tombol Edit dan Hapus */
+.content table .edit:hover, .content table .trash:hover {
+    background-color: #FFA500; /* Warna Latar Orange saat Hover */
+    color: #000; /* Warna Teks Hitam saat Hover */
+}
+
+/* Membuat batasan di sekitar sel tabel */
+.content table td {
+    border: 1px solid #FFA500;
+    padding: 10px;
+}
+
+
+.read .create-contact {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #FFA500; /* Warna Teks Orange */
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read .create-contact:hover {
+    background-color: #FFA500; /* Warna Latar Orange saat Hover */
+    color: #000; /* Warna Teks Hitam saat Hover */
+}
+
